@@ -19,6 +19,8 @@ import java.util.Set;
 @Table(name = "owners")
 public class Owner extends Person {
 
+    private static final long serialVersionUID = 2913904013832537727L;
+
     @Builder
     public Owner(Long id, String firstName, String lastName, String address, String city,
                  String telephone, Set<Pet> pets) {

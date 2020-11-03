@@ -17,6 +17,8 @@ import java.time.LocalDate;
 @Table(name = "visits")
 public class Visit extends BaseEntity {
 
+    private static final long serialVersionUID = -2222426936267106070L;
+
     @Column(name = "date")
     private LocalDate date;
 

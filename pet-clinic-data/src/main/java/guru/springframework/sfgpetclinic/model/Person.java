@@ -18,6 +18,8 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public class Person extends BaseEntity {
 
+    private static final long serialVersionUID = 4926608949676169276L;
+
     public Person(Long id, String firstName, String lastName) {
         super(id);
         this.firstName = firstName;

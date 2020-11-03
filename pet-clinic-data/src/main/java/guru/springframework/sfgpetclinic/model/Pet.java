@@ -19,6 +19,8 @@ import java.util.Set;
 @Table(name = "pets")
 public class Pet extends BaseEntity{
 
+    private static final long serialVersionUID = 2358913668675388410L;
+
     @Builder
     public Pet(Long id, String name, PetType petType, Owner owner, LocalDate birthDate, Set<Visit> visits) {
         super(id);

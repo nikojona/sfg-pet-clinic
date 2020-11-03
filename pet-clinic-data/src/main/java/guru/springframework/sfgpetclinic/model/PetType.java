@@ -18,6 +18,8 @@ import javax.persistence.Table;
 @Table(name = "types")
 public class PetType extends BaseEntity {
 
+    private static final long serialVersionUID = 5343379527153036105L;
+
     @Builder
     public PetType(Long id, String name) {
         super(id);
